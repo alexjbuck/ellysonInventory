@@ -1,0 +1,122 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+  "hideSelection": true,
+  "hideColumnHeader": true,
+  "rowFormatter": {
+    "elmType": "div",
+  "attributes": {
+    "class": "outer"
+  },
+  "style": {
+    "margin": "1em",
+    "padding": "1em",
+    "border": "1px solid #ccc",
+    "background-color": "#eee",
+    "display": "block"
+  },
+  "children": [
+    {
+      "elmType": "div",
+      "attributes": {
+        "class": "title"
+      },
+      "style": {
+        "font-size": "1em",
+        "text-align": "left",
+        "font-weight": "bold"
+      },
+      "txtContent": "=[$Title]    "
+    },
+    {
+      "elmType": "div",
+      "attributes": {
+        "class": "poc"
+      },
+      "style": {
+        "font-size": ".75em"
+      },
+      "children": [
+        {
+          "elmType": "span",
+          "txtContent": "Point of Contact: "
+        },
+        {
+          "elmType": "a",
+          "attributes": {
+            "href": "mailto:alexander.j.buck@navy.mil"
+          },
+          "style": {
+            "color": "teal"
+          },
+          "txtContent": "Alex Buck"
+        }
+      ]
+    },
+    {
+      "elmType": "div",
+      "attributes": {
+        "class": "status"
+      },
+      "children": [
+        {
+          "elmType": "span",
+          "txtContent": "Project Status: "
+        },
+        {
+          "elmType": "span",
+          "attributes": {
+            "class": "emphasis"
+          },
+          "style": {
+            "font-style": "italic"
+          },
+          "txtContent": "Active"
+        }
+      ]
+    },
+    {
+      "elmType": "div",
+      "attributes": {
+        "class": "dates"
+      },
+      "children": [
+        {
+          "elmType": "span",
+          "txtContent": "Project Start: "
+        },
+        {
+          "elmType": "span",
+          "attributes": {
+            "class": "emphasis"
+          },
+          "style": {
+            "font-style": "italic"
+          },
+          "txtContent": "02-05-2020"
+        },
+        {
+          "elmType": "span",
+          "txtContent": " Project End: "
+        },
+        {
+          "elmType": "span",
+          "attributes": {
+            "class": "emphasis"
+          },
+          "style": {
+            "font-style": "italic"
+          },
+          "txtContent": "02-05-2022"
+        }
+      ]
+    },
+    {
+      "elmType": "div",
+      "attributes": {
+        "class": "sponsor"
+      },
+      "txtContent": "    "
+    }
+  ]
+  }
+}
