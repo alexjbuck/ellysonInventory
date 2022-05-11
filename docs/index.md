@@ -1,17 +1,13 @@
-# Welcome to MkDocs
+# Getting Started in SharePoint
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Test site
 
-## Commands
+<https://flankspeed.sharepoint-mil.us.mcas-gov.us/sites/CPF-CNAF-FRAG/Lists/jTestJSONlist/jTestJSON2.aspx>
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## JSON Builder
 
-## Project layout
+<https://pnp.github.io/List-Formatting/tools/html-formatter-generator/>
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## List Format Syntax Reference
+
+<https://docs.microsoft.com/en-us/sharepoint/dev/declarative-customization/formatting-syntax-reference>

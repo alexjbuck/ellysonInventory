@@ -1,0 +1,29 @@
+.outer {
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    display: block;
+}
+
+.title {
+    font-size: 1.2em;
+    text-align: left;
+    font-weight: bold;
+}
+
+.poc {
+    font-size: .75em;
+}
+
+.emphasis {
+    font-style: italic;
+}
+
+.clear {
+    clear: both;
+}
+
+a {
+    color: teal;
+}
