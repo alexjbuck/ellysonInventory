@@ -2,8 +2,13 @@
 
 To get to the general settings for a list
 
-1) Click the List View button in the ribbon
-2) Click the "Edit current view" button
+1. Click the List View button in the ribbon
+2. Click the "Edit current view" button
+
+**OR**
+
+1. Click the gear icon in the top right
+2. Click the "List Settings" link in the slideout menu.
 
 ## General Settings
 
