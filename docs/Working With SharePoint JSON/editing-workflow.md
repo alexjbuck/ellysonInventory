@@ -30,7 +30,7 @@ What you need to do is take the output starting with `"elmType": "div"` (_Be car
 
 ```json
 {
-"$schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+"$schema": "https://developer.microsoft.com/json-schemas/sp/v2/row-formatting.schema.json",
 "hideSelection": true,
 "hideColumnHeader": true,
 "rowFormatter": {
