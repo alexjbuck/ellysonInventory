@@ -4,119 +4,186 @@
   "hideColumnHeader": true,
   "rowFormatter": {
     "elmType": "div",
-  "attributes": {
-    "class": "outer"
-  },
-  "style": {
-    "margin": "1em",
-    "padding": "1em",
-    "border": "1px solid #ccc",
-    "background-color": "#eee",
-    "display": "block"
-  },
-  "children": [
-    {
-      "elmType": "div",
-      "attributes": {
-        "class": "title"
-      },
-      "style": {
-        "font-size": "1em",
-        "text-align": "left",
-        "font-weight": "bold"
-      },
-      "txtContent": "=[$Title]    "
+    "attributes": {
+      "class": "outer"
     },
-    {
-      "elmType": "div",
-      "attributes": {
-        "class": "poc"
-      },
-      "style": {
-        "font-size": ".75em"
-      },
-      "children": [
-        {
-          "elmType": "span",
-          "txtContent": "Point of Contact: "
-        },
-        {
-          "elmType": "a",
-          "attributes": {
-            "href": "mailto:alexander.j.buck@navy.mil"
-          },
-          "style": {
-            "color": "teal"
-          },
-          "txtContent": "Alex Buck"
-        }
-      ]
+    "style": {
+      "margin": "1em",
+      "padding": "1em",
+      "border": "1px solid #ccc",
+      "background-color": "#eee",
+      "display": "block"
     },
-    {
-      "elmType": "div",
-      "attributes": {
-        "class": "status"
+    "children": [
+      {
+        "elmType": "div",
+        "attributes": {
+          "class": "title"
+        },
+        "style": {
+          "font-size": "1.2em",
+          "text-align": "left",
+          "font-weight": "bold"
+        },
+        "txtContent": "=[$Title]    "
       },
-      "children": [
-        {
-          "elmType": "span",
-          "txtContent": "Project Status: "
+      {
+        "elmType": "div",
+        "attributes": {
+          "class": "poc"
         },
-        {
-          "elmType": "span",
-          "attributes": {
-            "class": "emphasis"
+        "style": {
+          "font-size": "1.2em"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "attributes": {
+              "class": "label"
+            },
+            "style": {
+              "color": "#333",
+              "font-weight": "100"
+            },
+            "txtContent": "Point of Contact: "
           },
-          "style": {
-            "font-style": "italic"
-          },
-          "txtContent": "Active"
-        }
-      ]
-    },
-    {
-      "elmType": "div",
-      "attributes": {
-        "class": "dates"
+          {
+            "elmType": "a",
+            "attributes": {
+              "href": "='mailto:'+[$Email]"
+            },
+            "style": {
+              "color": "teal"
+            },
+            "txtContent": "=[$Point_x0020_of_x0020_Contact_x00]"
+          }
+        ]
       },
-      "children": [
-        {
-          "elmType": "span",
-          "txtContent": "Project Start: "
+      {
+        "elmType": "div",
+        "attributes": {
+          "class": "status"
         },
-        {
-          "elmType": "span",
-          "attributes": {
-            "class": "emphasis"
+        "children": [
+          {
+            "elmType": "span",
+            "attributes": {
+              "class": "label"
+            },
+            "style": {
+              "color": "#333",
+              "font-weight": "100"
+            },
+            "txtContent": "Project Status: "
           },
-          "style": {
-            "font-style": "italic"
-          },
-          "txtContent": "02-05-2020"
-        },
-        {
-          "elmType": "span",
-          "txtContent": " Project End: "
-        },
-        {
-          "elmType": "span",
-          "attributes": {
-            "class": "emphasis"
-          },
-          "style": {
-            "font-style": "italic"
-          },
-          "txtContent": "02-05-2022"
-        }
-      ]
-    },
-    {
-      "elmType": "div",
-      "attributes": {
-        "class": "sponsor"
+          {
+            "elmType": "span",
+            "attributes": {
+              "class": "emphasis"
+            },
+            "style": {
+              "font-style": "italic"
+            },
+            "txtContent": "=[$ProjectStatus]"
+          }
+        ]
       },
-      "txtContent": "    "
-    }
-  ]
+      {
+        "elmType": "div",
+        "attributes": {
+          "class": "start"
+        },
+        "style": {
+          "float": "left"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "attributes": {
+              "class": "label"
+            },
+            "style": {
+              "color": "#333",
+              "font-weight": "100"
+            },
+            "txtContent": "Project Start: "
+          },
+          {
+            "elmType": "span",
+            "attributes": {
+              "class": "emphasis"
+            },
+            "style": {
+              "font-style": "italic"
+            },
+            "txtContent": "=toLocaleDateString([$StartDate])"
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "attributes": {
+          "class": "end"
+        },
+        "style": {
+          "float": "right"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "attributes": {
+              "class": "label"
+            },
+            "style": {
+              "color": "#333",
+              "font-weight": "100"
+            },
+            "txtContent": "Project End: "
+          },
+          {
+            "elmType": "span",
+            "attributes": {
+              "class": "emphasis"
+            },
+            "style": {
+              "font-style": "italic"
+            },
+            "txtContent": "=toLocaleDateString([$EndDate])"
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "attributes": {
+          "class": "sponsor clear"
+        },
+        "style": {
+          "clear": "both"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "attributes": {
+              "class": "label"
+            },
+            "style": {
+              "color": "#333",
+              "font-weight": "100"
+            },
+            "txtContent": "Primary PMA: "
+          },
+          {
+            "elmType": "span",
+            "attributes": {
+              "class": "emphasis"
+            },
+            "style": {
+              "font-style": "italic"
+            },
+            "txtContent": "=[$PrimaryPMA]"
+          }
+        ]
+      }
+    ]
   }
 }

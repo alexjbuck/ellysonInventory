@@ -3,16 +3,18 @@
 =[$Title]
     </div>
     <div class="poc">
-        <span>Point of Contact: </span><a href="mailto:alexander.j.buck@navy.mil">Alex Buck</a>
+        <span class="label">Point of Contact: </span><a href="='mailto:'+[$Email]">=[$Point_x0020_of_x0020_Contact_x00]</a>
     </div>
     <div class="status">
-        <span>Project Status: </span><span class="emphasis">Active</span>
+        <span class="label">Project Status: </span><span class="emphasis">=[$ProjectStatus]</span>
     </div>
-    <div class="dates">
-        <span>Project Start: </span><span class="emphasis">02-05-2020</span><span> Project End: </span><span class="emphasis">02-05-2022</span>
+    <div class="start">
+        <span class="label">Project Start: </span><span class="emphasis">=toLocaleDateString([$StartDate])</span>
     </div>
-
-    <div class="sponsor">
-
+    <div class="end">
+        <span class="label">Project End: </span><span class="emphasis">=toLocaleDateString([$EndDate])</span>
+    </div>
+    <div class="sponsor clear">
+        <span class="label">Primary PMA: </span><span class="emphasis">=[$PrimaryPMA]</span>
     </div>
 </div>

@@ -61,3 +61,7 @@ The result will look something like this:
 ```
 
 The specifics the element style, attributes, and children are up to you and your formatting. You may also modify the `hideSelection` and `hideColumnHeader` properties as desired.
+
+## Highly recommend getting the skeleton correct first
+
+There are a few items that you have to do _after_ you get the skeleton. 

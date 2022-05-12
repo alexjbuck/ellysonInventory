@@ -11,3 +11,26 @@
 
 > This one was found by inadvertently toggling the second filter method. The list would only show a single entry, no matter what I did. I was only able to resolve this when I found this second filter method. I switched it back to "Show all items in this view."
 
+## **Field names lie to you**
+
+Yep. SharePoint lies to you. Don't act suprised.
+
+JSON must use the _Internal Field Name_. This is **NEVER** updated after the column is created. 
+
+> If you create the columen and call it "Jobs" but decide you would rather call it "Desired Occupation" the _internal field name_ will still be "Jobs".
+
+There is not an easy way to find the _internal field name_ of a column, go figure.
+
+The best way is the following:
+
+1. Click on the gear icon in the top right corner.
+2. Click on `List settings`.
+3. Scroll to the "Columns" section.
+4. Click on the column you want to check.
+5. The _internal field name_ is at the end of the URL in the address bar.
+
+> It will say `List=<long string>&Field=<internal field name>`
+
+6. You can the use the _internal field name_ in JSON formatting as such: `"=[$<internal field name>]"`. If your fieldname is: `Desired_x0020_Occupation` you would use: `"=[$Desired_x0020_Occupation]"` to refer to that field in JSON formatting.
+
+If you wanted the output to read: `Desired Occupation: <desired occupation>` you would use: `"=Desired Occupation: [$Desired_x0020_Occupation]"` for the `txtContent` attribute of the element.
