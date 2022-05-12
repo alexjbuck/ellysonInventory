@@ -33,7 +33,7 @@ The best way is the following:
 
 6. You can the use the _internal field name_ in JSON formatting as such: `"=[$<internal field name>]"`. If your fieldname is: `Desired_x0020_Occupation` you would use: `"=[$Desired_x0020_Occupation]"` to refer to that field in JSON formatting.
 
-If you wanted the output to read: `Desired Occupation: <desired occupation>` you would use: `"=Desired Occupation: [$Desired_x0020_Occupation]"` for the `txtContent` attribute of the element.
+If you wanted the output to read: `Desired Occupation: <desired occupation>` you would use: `"='Desired Occupation: '+[$Desired_x0020_Occupation]"` for the `txtContent` attribute of the element.
 
 ## **If you use the SharePoint Buttons read this!**
 
