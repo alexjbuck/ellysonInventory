@@ -10,8 +10,8 @@ e.g.
 
 The format to use for applying a filter is:
 
-    <url>?FilterField1=<field-name>&FilterValue1=<field-value>
+    <url>?useFiltersInViewXml=1 FilterField1=<field-name>&FilterValue1=<field-value>
 
 e.g.
 
-    https://flankspeed.sharepoint-mil.us.mcas-gov.us/sites/navair_autonomy_and_ai_coi/Lists/AI%20Project%20Inventory/DefaultFormatted.aspx?FilterField1=ID&FilterValue1=1
+    https://flankspeed.sharepoint-mil.us.mcas-gov.us/sites/navair_autonomy_and_ai_coi/Lists/AI%20Project%20Inventory/DefaultFormatted.aspx?useFiltersInViewXml=1&FilterField1=ID&FilterValue1=1
