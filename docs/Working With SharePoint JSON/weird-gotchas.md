@@ -34,3 +34,17 @@ The best way is the following:
 6. You can the use the _internal field name_ in JSON formatting as such: `"=[$<internal field name>]"`. If your fieldname is: `Desired_x0020_Occupation` you would use: `"=[$Desired_x0020_Occupation]"` to refer to that field in JSON formatting.
 
 If you wanted the output to read: `Desired Occupation: <desired occupation>` you would use: `"=Desired Occupation: [$Desired_x0020_Occupation]"` for the `txtContent` attribute of the element.
+
+## **If you use the SharePoint Buttons read this!**
+
+If you use a SharePoint button to access things like the edit element panel (the slideout panel for editing an entry), then you need to do some manual additions to the JSON output from the formatter tool.
+
+The JSON button element needs an attribute called `customRowAction`. This is not an HTML attribute, but a SharePoint attribute. This means you cannot specify this via HTML+CSS, and it will not populate into the JSON output. _You must add it manually._ Great! So much fun! Manual additions to automated workflows are the best!
+
+```json
+"customRowAction": {
+    "action": "defaultClick"
+},
+```
+
+Reference the syntax docs for the list of possible `action` values. The `defaultClick` action will open the edit panel, which suffices for us.
