@@ -15,7 +15,7 @@
 
 Yep. SharePoint lies to you. Don't act suprised.
 
-JSON must use the _Internal Field Name_. This is **NEVER** updated after the column is created. 
+JSON must use the _Internal Field Name_. This is **NEVER** updated after the column is created.
 
 > If you create the columen and call it "Jobs" but decide you would rather call it "Desired Occupation" the _internal field name_ will still be "Jobs".
 
@@ -29,7 +29,7 @@ The best way is the following:
 4. Click on the column you want to check.
 5. The _internal field name_ is at the end of the URL in the address bar.
 
-> It will say `List=<long string>&Field=<internal field name>`
+    > It will say `List=<long string>&Field=<internal field name>`
 
 6. You can the use the _internal field name_ in JSON formatting as such: `"=[$<internal field name>]"`. If your fieldname is: `Desired_x0020_Occupation` you would use: `"=[$Desired_x0020_Occupation]"` to refer to that field in JSON formatting.
 

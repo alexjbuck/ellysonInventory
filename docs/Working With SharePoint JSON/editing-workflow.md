@@ -2,7 +2,7 @@
 
 ## Baseline JSON
 
-The general workflow to build the starter JSON goes as follows: 
+The general workflow to build the starter JSON goes as follows:
 
 1. Write HTML
 2. Write CSS
@@ -13,7 +13,7 @@ The general workflow to build the starter JSON goes as follows:
 
 By default the tool builds _column_ syntax JSON. We're concerned with building _view_ syntax JSON entries.
 
-The output will start with the following: 
+The output will start with the following:
 
 ```json
 {
@@ -38,6 +38,7 @@ What you need to do is take the output starting with `"elmType": "div"` (_Be car
     },
 }
 ```
+
 The result will look something like this:
 
 ```json
@@ -64,4 +65,4 @@ The specifics the element style, attributes, and children are up to you and your
 
 ## Highly recommend getting the skeleton correct first
 
-There are a few items that you have to do _after_ you get the skeleton. 
+There are a few items that you have to do _after_ you get the skeleton. If you use JSON button elements, you will need to add the `defaultRowAction` property in manually. This is described in [weird gotchas](weird-gotchas.md).

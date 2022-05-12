@@ -18,6 +18,8 @@ In short, go to Settings > Advanced Settings > "Allow management of content type
 
 Then go back to Settings. There is a new section called "Content Type". Click the text `Item`. Then click the `Title` entry on the new page. This will finally load a page that has an option called "Column Settings" where one option is "Hidden (Will not appear in forms)". Select this and press "OK".
 
+Once you have done this, go back to Settings > Advanced Settings > "Allow management of content types?" and set it to "No". If you do not, there is a "Content Type" field that now will show up on forms. Lovely.
+
 ## Multi-line Text and "Rich Text Fields"
 
 Don't use Rich Text Fields.

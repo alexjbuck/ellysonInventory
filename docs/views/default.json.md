@@ -1,5 +1,6 @@
+```json
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/row-formatting.schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
   "hideSelection": true,
   "hideColumnHeader": true,
   "rowFormatter": {
@@ -314,3 +315,4 @@
 
   }
 }
+```

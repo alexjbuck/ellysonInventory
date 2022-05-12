@@ -3,7 +3,6 @@
   "hideSelection": true,
   "hideColumnHeader": true,
   "rowFormatter": {
-
     "elmType": "div",
     "attributes": {
       "class": "outer"
@@ -13,9 +12,7 @@
       "padding": "1em",
       "border": "1px solid #ccc",
       "background-color": "#eee",
-      "display": "block",
-      "box-shadow": "1px 1px 2px black",
-      "border-radius": "5px"
+      "display": "block"
     },
     "children": [
       {
@@ -29,29 +26,6 @@
           "font-weight": "bold"
         },
         "txtContent": "=[$Title]    "
-      },
-      {
-        "elmType": "div",
-        "attributes": {
-          "class": "objective"
-        },
-        "children": [
-          {
-            "elmType": "div",
-            "attributes": {
-              "class": "label"
-            },
-            "style": {
-              "color": "#333",
-              "font-weight": "100"
-            },
-            "txtContent": "=if([$ProjectObjective],'Project Objective:','')"
-          },
-          {
-            "elmType": "div",
-            "txtContent": "=[$ProjectObjective]        "
-          }
-        ]
       },
       {
         "elmType": "div",
@@ -88,38 +62,6 @@
       {
         "elmType": "div",
         "attributes": {
-          "class": "poc"
-        },
-        "style": {
-          "font-size": "1.2em"
-        },
-        "children": [
-          {
-            "elmType": "span",
-            "attributes": {
-              "class": "label"
-            },
-            "style": {
-              "color": "#333",
-              "font-weight": "100"
-            },
-            "txtContent": "=if([$SecondaryPOCName],'Secondary Point of Contact: ','')"
-          },
-          {
-            "elmType": "a",
-            "attributes": {
-              "href": "='mailto:'+[$SecondaryPOCEmail]"
-            },
-            "style": {
-              "color": "teal"
-            },
-            "txtContent": "=[$SecondaryPOCName]"
-          }
-        ]
-      },
-      {
-        "elmType": "div",
-        "attributes": {
           "class": "status"
         },
         "children": [
@@ -132,7 +74,7 @@
               "color": "#333",
               "font-weight": "100"
             },
-            "txtContent": "=if([$ProjectStatus],'Project Status: ','')"
+            "txtContent": "Project Status: "
           },
           {
             "elmType": "span",
@@ -164,7 +106,7 @@
               "color": "#333",
               "font-weight": "100"
             },
-            "txtContent": "=if([$StartDate],'Project Start: ','')"
+            "txtContent": "Project Start: "
           },
           {
             "elmType": "span",
@@ -196,7 +138,7 @@
               "color": "#333",
               "font-weight": "100"
             },
-            "txtContent": "=if([$EndDate],'Project End: ','')"
+            "txtContent": "Project End: "
           },
           {
             "elmType": "span",
@@ -228,7 +170,7 @@
               "color": "#333",
               "font-weight": "100"
             },
-            "txtContent": "=if([$PrimaryPMA],'Primary PMA: ','')"
+            "txtContent": "Primary PMA: "
           },
           {
             "elmType": "span",
@@ -241,76 +183,7 @@
             "txtContent": "=[$PrimaryPMA]"
           }
         ]
-      },
-      {
-        "elmType": "a",
-        "attributes": {
-          "href": "='https://flankspeed.sharepoint-mil.us.mcas-gov.us/sites/navair_autonomy_and_ai_coi/Lists/AI%20Project%20Inventory/DetailView.aspx?useFiltersInViewXml=1&FilterField1=ID&FilterValue1='+[$ID]"
-        },
-        "style": {
-          "color": "teal"
-        },
-        "children": [
-          {
-            "elmType": "div",
-            "attributes": {
-              "class": "btn"
-            },
-            "style": {
-              "-webkit-appearance": "button",
-              "-moz-appearance": "button",
-              "appearance": "button",
-              "color": "#fff",
-              "display": "inline-block",
-              "padding": ".5em",
-              "margin-top": "1em",
-              "border": "1px solid #111",
-              "border-radius": "3px",
-              "cursor": "pointer",
-              "background-color": "#004E8C",
-              "box-shadow": "1px 1px 2px black"
-            },
-            "txtContent": "            View Project        "
-          }
-        ]
-      },
-      {
-        "elmType": "button",
-        "attributes": {
-          "class": "sp-btn"
-        },
-        "customRowAction": {
-          "action": "defaultClick"
-        },      
-        "style": {
-          "border": "0",
-          "font-size": "1em"
-        },
-        "children": [
-          {
-            "elmType": "div",
-            "attributes": {
-              "class": "btn"
-            },
-            "style": {
-              "-webkit-appearance": "button",
-              "-moz-appearance": "button",
-              "appearance": "button",
-              "color": "#fff",
-              "display": "inline-block",
-              "padding": ".5em",
-              "margin-top": "1em",
-              "border": "1px solid #111",
-              "border-radius": "3px",
-              "cursor": "pointer",
-              "background-color": "#004E8C",
-              "box-shadow": "1px 1px 2px black"
-            },
-            "txtContent": "            Edit Project        "
-          }
-        ]
       }
     ]
-
   }
 }
