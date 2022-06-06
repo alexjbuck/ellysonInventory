@@ -1,4 +1,4 @@
-\# Importing data from STAIRS exports
+# Importing data from STAIRS exports
 
 First off. Sorry, this is NOT going to be enjoyable.
 
@@ -22,6 +22,11 @@ The command uses a text pattern string to determine what to find/replace, and it
 
 ```shell
 's/\t//g'
+```
+
+the full command (if you had sed installed local)
+```shell
+sed 's/\t//g' file.csv
 ```
 
 sed is not installed on windows machines, however, there is a webapp that you can use to run [sed](https://sed.js.org/).
